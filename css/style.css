@@ -1,0 +1,132 @@
+body{
+  background-color: #fffbf0;
+}
+
+.header{
+  background-color: #f07167;
+  
+}
+
+
+
+
+
+
+
+.header-box {
+  background-image: url(../img/cream.png);
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: contain;
+  animation-name: cream-flow;
+  animation-duration: 7s;
+  animation-timing-function: ease;*/
+}
+
+.primary-bg {
+  background-color: #f07167;
+}
+
+.fill-y {
+  min-height: 100vh;
+}
+
+.primary-text {
+  color: #f07167;
+}
+.secondary-text {
+  color: #ffffff;
+}
+.secondary-text-light {
+  color: #ffffff88;
+}
+
+.navbar {
+  color: #283339 !important;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.navbar .navbar-brand:hover {
+  transform: scale(1.04);
+  color: #00b675;
+}
+
+.underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff; /* Adjust the desired color */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+  
+}
+
+.navbar .nav-item .active:hover {
+  font-weight: bolder;
+}
+.nav-item .active {
+  color: #ffffff !important;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
+}
+
+.search-bar{
+
+ 
+  background-color: #ffffffbb;
+
+}
+
+
+@keyframes cream-flow {
+  from {
+    transform: translateY(-2000px);
+  }
+  
+  to{
+    transform: translateY(0);
+  }
+}
+
+
+
+.header-box .box{
+  height:60%;
+  background-color: #f07167;
+}
+
+@media (min-width: 992px) {
+  .custom-collapse {
+    display: block;
+  }
+  .custom-offcanvas {
+    display: none;
+  }
+
+  .nav-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
